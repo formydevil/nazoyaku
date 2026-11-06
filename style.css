@@ -1,0 +1,144 @@
+:root{--ink:#1b1b19;--paper:#f4f2ec;--line:#cbc9c1;--muted:#66655f;--accent:#d5d0c5}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,'Apple SD Gothic Neo','Malgun Gothic',sans-serif}a{color:inherit;text-decoration:none}button,input{font:inherit}button{cursor:pointer}.site-header{height:84px;padding:0 5.5%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{font-weight:800;font-size:20px;letter-spacing:-.05em}.brand span{display:block;font-size:9px;font-weight:500;letter-spacing:.12em;margin-top:4px}.site-header nav{display:flex;gap:36px;font-size:13px}.site-header nav a:hover,.text-link:hover{text-decoration:underline}.section{padding:105px 8%}.eyebrow{font-size:11px;font-weight:700;letter-spacing:.14em}.hero{min-height:710px;position:relative;padding-top:100px}.hero h1{font-size:clamp(44px,6.8vw,105px);line-height:1.23;letter-spacing:-.075em;margin:36px 0 32px;font-weight:700}.hero h1 em{font-style:normal;color:#77746d}.hero-intro{line-height:1.9;color:#4f4e48;font-size:16px}.text-link{display:inline-block;margin-top:23px;border-bottom:1px solid;padding-bottom:8px;font-size:14px}.hero-bottom{display:flex;justify-content:space-between;position:absolute;bottom:32px;left:8%;right:8%;font-size:10px;letter-spacing:.15em}.feature{padding:0 5.5%}.slide-art{height:480px;background:#d5d1c6;display:flex;align-items:center;justify-content:center;position:relative;transition:background .4s}.slide-mark{font-family:Georgia,serif;font-size:210px;font-weight:400}.slide-caption{position:absolute;bottom:38px;left:38px;font-size:20px;letter-spacing:.1em}.slide-controls{display:flex;align-items:center;gap:12px;padding:16px 0}.slide-controls button{border:1px solid var(--line);background:transparent;padding:10px 16px}.slide-controls .auto{margin-left:auto}.slide-controls span{font-size:12px}.about h2,.books h2,.translator h2,.contact h2{font-size:clamp(38px,5vw,72px);letter-spacing:-.065em;line-height:1.22;margin:28px 0}.section-lead{max-width:600px;line-height:1.9;color:var(--muted)}.principles{display:grid;grid-template-columns:repeat(3,1fr);margin-top:70px;border-top:1px solid var(--ink)}.principles article{padding:26px 25px 45px 0;border-bottom:1px solid var(--line)}.principles article+article{padding-left:25px;border-left:1px solid var(--line)}.principles article span{font-size:12px}.principles h3{font-size:29px;margin:40px 0 20px}.principles p{line-height:1.8;color:var(--muted);font-size:14px}.books{background:#e9e7e0}.books-head{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:40px}.books-head p{color:var(--muted)}.search-label{display:flex;flex-direction:column;gap:9px;font-size:12px;min-width:265px}.search-label input{border:0;border-bottom:1px solid var(--ink);background:transparent;padding:12px 4px;outline-offset:3px}.book-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:46px 22px}.book-cover{aspect-ratio:3/4;background:#d7d3c9;display:flex;align-items:center;justify-content:center;padding:18px;text-align:center;font-family:Georgia,serif;font-size:22px;letter-spacing:-.04em;overflow:hidden}.book-cover img{width:100%;height:100%;object-fit:cover}.book-info h3{font-size:16px;line-height:1.45;margin:14px 0 7px}.book-info p{font-size:12px;color:var(--muted);line-height:1.7;margin:0}.book-info a{text-decoration:underline;text-underline-offset:3px}.more-button{display:block;margin:60px auto 0;background:transparent;border:1px solid var(--ink);padding:15px 45px}.more-button:hover{background:var(--ink);color:var(--paper)}.no-results{padding:35px 0}.translator{min-height:480px}.translator-tag{font-size:11px;letter-spacing:.12em}.translator>p:not(.eyebrow){max-width:680px;line-height:2}.muted{color:var(--muted)}.contact{background:#242420;color:#f6f3eb}.contact h2{margin-top:50px}.contact-note{opacity:.65;font-size:13px;margin-top:50px}footer{padding:28px 5.5%;display:flex;justify-content:space-between;font-size:11px;letter-spacing:.08em}@media(max-width:760px){.site-header{height:70px;padding:0 5%}.site-header nav{gap:16px;font-size:12px}.section{padding:75px 6%}.hero{min-height:610px;padding-top:85px}.hero h1{font-size:clamp(40px,9vw,70px)}.hero-bottom{left:6%;right:6%;font-size:8px}.slide-art{height:340px}.slide-mark{font-size:150px}.slide-caption{left:20px;bottom:20px;font-size:15px}.principles{grid-template-columns:1fr}.principles article+article{padding-left:0;border-left:0}.principles h3{margin-top:20px}.books-head{display:block}.search-label{margin:32px 0 0;min-width:0}.book-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 15px}.book-cover{font-size:18px}.contact h2{font-size:39px}footer{gap:15px;line-height:1.7}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* 업데이트: 출처 및 미확인 도서 구분, 표지 이미지의 비율 유지 */
+.archive-tools{display:flex;gap:18px;align-items:end;flex-wrap:wrap}
+.archive-tools .search-label{min-width:245px}
+.filter-label{display:flex;flex-direction:column;gap:9px;font-size:12px;min-width:160px}
+.filter-label select{border:0;border-bottom:1px solid var(--ink);background:transparent;padding:12px 4px;border-radius:0;color:var(--ink)}
+.result-count{font-size:12px;color:var(--muted);margin:4px 0 22px}
+.archive-disclaimer{font-size:12px;line-height:1.8;color:var(--muted);max-width:740px;margin:30px auto 0}
+.book-cover{position:relative;padding:0}
+.cover-placeholder{width:100%;height:100%;padding:18px;display:flex;align-items:center;justify-content:center}
+.book-cover img{display:block;position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#e4e0d7}
+.book-cover.has-image img{display:block}
+.book-info .book-status{font-size:11px;color:#585a50;margin-top:5px}
+.book-info .title-alias{color:#75736c;font-size:11px;margin:6px 0 4px}
+.book-info a{display:inline-block;margin-top:9px;font-size:12px}
+.slide-art{overflow:hidden}
+.slide-cover{height:83%;max-width:60%;object-fit:contain;filter:drop-shadow(10px 12px 14px #0003)}
+.slide-mark[hidden]{display:none}
+@media(max-width:760px){.archive-tools{display:grid;grid-template-columns:1fr 1fr;gap:15px}.archive-tools .search-label{grid-column:1/-1;margin:0;min-width:0}.filter-label{min-width:0}.book-cover img{object-fit:contain}.slide-cover{max-width:72%;height:75%}}
+
+/* 메인 화면: 왼쪽 타이틀 + 오른쪽 대표 이미지 */
+.hero-layout{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);align-items:stretch;gap:2.5%;padding:45px 5.5% 65px;min-height:690px}
+.hero-layout .hero{min-height:580px;padding:65px 0 70px;position:relative}
+.hero-layout .hero h1{font-size:clamp(38px,4.5vw,78px);line-height:1.27}
+.hero-layout .hero-bottom{left:0;right:0;bottom:12px;gap:12px;flex-wrap:wrap}
+.hero-layout .feature{padding:0;min-width:0;display:flex;align-items:center}
+.hero-layout .slide-panel{width:100%}
+.hero-layout .slide-art{height:min(570px,52vw);min-height:440px}
+.hero-layout .slide-mark{font-family:Georgia,serif;font-size:clamp(45px,7vw,105px);letter-spacing:-.08em;color:#55534d}
+@media(max-width:900px){.hero-layout{grid-template-columns:1fr;gap:25px;padding:24px 5% 45px}.hero-layout .hero{min-height:440px;padding:45px 0 55px}.hero-layout .hero h1{font-size:clamp(42px,7vw,75px)}.hero-layout .slide-art{height:430px;min-height:0}}
+@media(max-width:520px){.hero-layout .hero{min-height:480px}.hero-layout .hero h1{font-size:clamp(38px,10vw,54px)}.hero-layout .slide-art{height:340px}.hero-layout .hero-bottom{font-size:8px}}
+
+/* v14: show actual cover images without relying on load-event CSS class */
+.book-cover img{display:block!important;position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#e4e0d7}
+.book-cover .cover-placeholder{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:16px}
+.book-cover img:not([src]){display:none!important}
+
+/* v16: hide load-more reliably once all matched books have been shown */
+.more-button[hidden], [hidden] {display:none!important}
+.hero-intro{max-width:none}
+.translator > p {max-width:none!important}
+.translator > p:not(.eyebrow){max-width:none!important}
+@media(min-width:1000px){.hero-intro,.translator>p:not(.eyebrow){white-space:nowrap}}
+
+
+/* v17 compact editorial layout. Content and controls are not overlaid on artwork. */
+:root{--paper:#f8f7f3;--ink:#272723;--line:#d9d8d1;--muted:#66645f}
+body{overflow-x:hidden;font-size:14px;line-height:1.55}
+.site-header{max-width:1320px;margin:auto;height:68px;padding:0 32px}
+.brand{font-size:17px}
+.site-header nav{gap:26px;font-size:12px}
+.section{padding:72px max(32px,calc((100vw - 1180px)/2))}
+.eyebrow{font-size:10px;letter-spacing:.13em}
+.hero-layout{max-width:1320px;min-height:0;padding:48px 32px 66px;margin:0 auto;gap:50px;grid-template-columns:minmax(0,1.02fr) minmax(0,.98fr);align-items:center}
+.hero-layout .hero{min-height:0;padding:0 0 35px}
+.hero-layout .hero h1{font-size:clamp(30px,3.45vw,52px);line-height:1.42;letter-spacing:-.06em;margin:25px 0 24px;word-break:keep-all}
+.hero-intro{font-size:13px;line-height:1.8;white-space:normal}
+.text-link{margin-top:13px;font-size:12px;padding-bottom:6px}
+.hero-layout .hero-bottom{bottom:-34px;font-size:9px;letter-spacing:.1em;position:absolute}
+.hero-layout .feature{align-items:stretch}
+.hero-layout .slide-panel{max-width:450px;margin-left:auto;min-width:0}
+.hero-layout .slide-art{height:390px;min-height:0;display:flex;align-items:center;justify-content:center;padding:26px 36px;overflow:hidden}
+.slide-cover{height:100%;width:auto;max-width:100%;object-fit:contain;filter:drop-shadow(6px 9px 8px #0002)}
+.slide-caption{position:static;display:block;min-height:38px;padding:12px 2px 4px;font-size:12px;font-weight:600;letter-spacing:-.02em;line-height:1.5;white-space:normal;overflow-wrap:anywhere}
+.slide-controls{padding:8px 0 0;gap:7px;flex-wrap:wrap}
+.slide-controls button{font-size:11px;padding:7px 11px;min-height:34px}
+.slide-controls .auto{margin-left:auto}
+.slide-controls span{font-size:11px;min-width:52px;text-align:center}
+.about h2,.books h2,.translator h2,.contact h2{font-size:clamp(28px,3.4vw,46px);line-height:1.25;margin:18px 0}
+.about .section-lead{font-size:13px;line-height:1.8;max-width:680px}
+.principles{margin-top:35px}
+.principles article{padding:22px 18px 27px 0}
+.principles article+article{padding-left:18px}
+.principles h3{font-size:21px;margin:22px 0 8px}
+.principles p{font-size:12px;line-height:1.7}
+.books-head{gap:25px;margin-bottom:24px}
+.books-head p{font-size:12px}
+.archive-tools{gap:12px}
+.archive-tools .search-label{min-width:185px}
+.filter-label{min-width:130px}
+.search-label,.filter-label{font-size:11px;gap:3px}
+.search-label input,.filter-label select{font-size:12px;padding:8px 4px;max-width:100%}
+.book-grid{grid-template-columns:repeat(5,minmax(0,1fr));gap:32px 18px}
+.book-cover{aspect-ratio:3/4}
+.book-info h3{font-size:13px;line-height:1.5;margin:10px 0 4px;word-break:keep-all}
+.book-info p,.book-info a{font-size:11px}
+.book-info a{margin-top:6px}
+.more-button{margin:38px auto 0;padding:11px 35px;font-size:12px}
+.translator{min-height:0}
+.translator>p:not(.eyebrow){font-size:13px;line-height:1.8}
+.translator .muted a{text-decoration:underline;text-underline-offset:4px}
+.contact h2{margin:20px 0 28px}
+.contact-note{margin-top:23px;font-size:15px;opacity:1}
+.contact-note a{border-bottom:1px solid #ffffff99;padding-bottom:3px}
+footer{max-width:1320px;margin:0 auto;padding:22px 32px;font-size:10px}
+@media(max-width:1050px){
+ .section{padding:62px 30px}
+ .hero-layout{gap:28px;padding:45px 30px 56px}
+ .hero-layout .hero h1{font-size:clamp(29px,3.65vw,41px)}
+ .hero-layout .slide-art{height:340px}
+ .book-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+ .books-head{display:block}
+ .archive-tools{margin-top:20px}
+ .hero-intro,.translator>p:not(.eyebrow){white-space:normal}
+}
+@media(max-width:760px){
+ .site-header{height:62px;padding:0 20px}
+ .site-header nav{gap:13px;font-size:11px}
+ .brand{font-size:16px}
+ .brand span{font-size:8px}
+ .section{padding:53px 20px}
+ .hero-layout{grid-template-columns:1fr;gap:38px;padding:35px 20px 50px}
+ .hero-layout .hero{padding:0 0 20px}
+ .hero-layout .hero h1{font-size:clamp(29px,7.5vw,43px);margin:16px 0 17px;line-height:1.45}
+ .hero-layout .hero-bottom{position:static;margin-top:28px}
+ .hero-layout .slide-panel{max-width:none;width:100%;margin:0}
+ .hero-layout .slide-art{height:min(88vw,420px);min-height:0;padding:28px 35px}
+ .slide-cover{height:100%;max-width:100%}
+ .slide-caption{font-size:12px;min-height:36px}
+ .principles{grid-template-columns:1fr;margin-top:25px}
+ .principles article,.principles article+article{padding:17px 0 18px;border-left:0}
+ .principles h3{font-size:18px;margin:12px 0 6px}
+ .book-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:25px 14px}
+ .books-head{margin-bottom:20px}
+ .archive-tools{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:15px}
+ .archive-tools .search-label{grid-column:1/-1;min-width:0}
+ .filter-label{min-width:0}
+ .translator>p:not(.eyebrow){white-space:normal!important}
+ .contact h2{font-size:34px}
+ footer{padding:20px;gap:16px}
+}
+@media(max-width:480px){
+ .site-header{padding:0 16px}
+ .site-header nav{gap:11px}
+ .section{padding:45px 16px}
+ .hero-layout{padding:28px 16px 42px}
+ .hero-layout .hero h1{font-size:clamp(27px,8.3vw,37px)}
+ .hero-layout .slide-art{height:320px;padding:25px 28px}
+ .book-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:27px 12px}
+ .slide-controls .auto{font-size:10px;padding:7px 8px}
+ .contact h2{font-size:31px}
+}
+@media(prefers-reduced-motion:reduce){.slide-art{transition:none}}
